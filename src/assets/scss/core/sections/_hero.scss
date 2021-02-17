@@ -1,9 +1,10 @@
 .hero {
-	background-image: url(../../../images/bg6.svg);
+	background-image: url(../../../images/bg5.svg);
 	background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 	background-color:rgba(255, 255, 255, 0.1);
+	min-height: 100vh;
 	.section-inner {
 		padding-top: $hero--padding-t__mobile;
 		padding-bottom: $hero--padding-b__mobile;

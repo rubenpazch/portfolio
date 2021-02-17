@@ -14,6 +14,7 @@ $palette: (
 	),
 	customLink: (
 		1: #344563,
+		2: #172B4D,
 	),
 	primary: (
 		1: #6163FF,
@@ -36,7 +37,7 @@ $palette: (
 
 // Base typography: color
 $color: (
-	heading:				get-color(light, 1),
+	heading:				get-color(customLink, 2),
 	base: 					get-color(light, 2),
 	high-contrast: 			get-color(light, 1),
 	mid-contrast: 			get-color(light, 2),
