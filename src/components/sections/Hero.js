@@ -63,14 +63,12 @@ const Hero = ({
             <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               I'm Ruben welcome to my personal portfolio 
             </h2>
-            <div className="container-xs">
+            <div className="container-sm">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
               </p>
             </div>
           </div>
-         
-       
         </div>
       </div>
     </section>
