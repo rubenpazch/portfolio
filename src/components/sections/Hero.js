@@ -66,8 +66,14 @@ const Hero = ({
             <div className="container-sm">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
               </p>
             </div>
+            <span>LET'S CONNECT</span>
+            <ul>
+              <li><a href="#">dd</a></li>
+              <li><a href="#">dd</a></li>
+            </ul>
           </div>
         </div>
       </div>

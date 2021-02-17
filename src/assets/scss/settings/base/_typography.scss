@@ -21,6 +21,7 @@ $font--scale: (
 	epsilon: 	( 20px, 30px, -0.1px ),
 	zeta:    	( 18px, 28px, -0.1px ),
 	eta:     	( 16px, 24px, -0.1px ),
+	peta:     	( 48px, 58px, -0.3px ),
 	theta:   	( 14px, 22px, null )
 );
 
@@ -42,7 +43,7 @@ $font--size: (
 	table: 			'eta',
 	// ↓ Desktop (set to null if font size won't change on desktop)
 	h1-desktop:		'alpha',
-	h2-desktop:		'beta',
+	h2-desktop:		'peta',
 	h3-desktop:		'gamma',
 	h4-desktop:		null,
 	base-desktop:	null,
