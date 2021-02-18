@@ -86,7 +86,7 @@
 			padding-bottom: $split-item--padding-v__desktop / 2;
 			flex-direction: row;
 			flex-wrap: nowrap;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: flex-start;
 
 			.split-item-content {
@@ -94,6 +94,25 @@
 				width: ($container--width-sm / 2) - $split-item-content--padding-h;
 				margin-bottom: 0;
 				margin-right: $split-item--inner-padding-h;
+				.split-item-list ul{
+					display: flex;
+					flex-flow: row;
+					list-style: none;
+				}
+				.split-item-list ul li{
+					width: auto;
+					text-transform: capitalize;
+					color: color(customBlue3);
+					@include font-size(sm);
+				}
+				.split-item-list ul li span{
+					color: color(customBlue4);
+				}
+				.split-item-list ul li:first-child{
+					color: color(customBlue1);
+					text-transform: uppercase;
+					@include font-size(sm);
+				}
 			}
 
 			.split-item-image {

@@ -61,20 +61,24 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          
           <div className={splitClasses}>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Hospital Appointment System
+                </h3>
+                <div className="split-item-list text-xxs text-color-primary fw-600 tt-u mb-8">
+                  <ul className="m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
                 <p className="m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                </p>
               </div>
               <div className={
                 classNames(
@@ -83,7 +87,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src={require('./../../assets/images/portfolio1.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -92,15 +96,15 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
                 <h3 className="mt-0 mb-12">
                   Data-driven insights
-                  </h3>
+                </h3>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Lightning fast workflow
+                </div>
                 <p className="m-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                </p>
               </div>
               <div className={
                 classNames(
@@ -109,7 +113,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src={require('./../../assets/images/portfolio2.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />

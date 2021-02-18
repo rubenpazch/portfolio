@@ -61,7 +61,7 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              I'm Ruben welcome to my personal portfolio 
+              I'm Ruben and I love coding
             </h2>
             <div className="container-sm">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">

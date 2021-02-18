@@ -15,6 +15,8 @@ $palette: (
 	customLink: (
 		1: #344563,
 		2: #172B4D,
+		3: #6B778C,
+		4: #C1C7D0
 	),
 	primary: (
 		1: #6163FF,
@@ -56,7 +58,10 @@ $color: (
 	base-inverse:			get-color(light, 3),
 	high-contrast-inverse: 	get-color(dark, 1),
 	mid-contrast-inverse: 	get-color(dark, 2),
-	low-contrast-inverse: 	get-color(light, 3)
+	low-contrast-inverse: 	get-color(light, 3),
+	customBlue1: 	get-color(customLink, 1),
+	customBlue3: 	get-color(customLink, 3),
+	customBlue4: 	get-color(customLink, 4)
 );
 
 // Borders and dividers: color
