@@ -81,5 +81,17 @@
 		.hero-content a {			
 			@include font-size(link-desktop);
 		}
+
+		.hero-content ul {
+			list-style: none;
+			display: flex;
+			flex-flow: row;
+		}
+
+		.hero-content ul li a img {
+			color: #505F79;
+			width: 20px;
+			height: 20px;
+		}
 	}
 }

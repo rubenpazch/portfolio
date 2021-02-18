@@ -70,17 +70,55 @@ const Hero = ({
               </p>
             </div>
             <a href="www.google.com">LET'S CONNECT</a>
-            <ul>
-              <li>
-                <a href="www.google.com">
+            <ul className="d-flex flex-row p-0 m-0">
+              <li className="pr-16 pt-16">
+                <a href="www.google.com" className="p-0 m-0">
                   <Image
-                    src={require('./../../assets/images/feature-tile-icon-04.svg')}
+                    src={require('./../../assets/images/feature-tile-icon-07.svg')}
                     alt="Features tile icon 01"
-                    width={64}
-                    height={64} />
+                    />
                 </a>
               </li>
-              <li><a href="www.google.com">dd</a></li>
+              <li className="pr-16 pt-16">
+                <a href="www.google.com" className="p-0 m-0">
+                  <Image
+                    src={require('./../../assets/images/feature-tile-icon-08.svg')}
+                    alt="Features tile icon 01"
+                    />
+                </a>
+              </li>
+              <li className="pr-16 pt-16">
+                <a href="www.google.com" className="p-0 m-0">
+                  <Image
+                    src={require('./../../assets/images/feature-tile-icon-15.svg')}
+                    alt="Features tile icon 01"                    
+                    />
+                </a>
+              </li>
+              <li className="pr-16 pt-16">
+                <a href="www.google.com" className="p-0 m-0">
+                  <Image
+                    src={require('./../../assets/images/feature-tile-icon-17.svg')}
+                    alt="Features tile icon 01"
+                    />
+                </a>
+              </li>
+              <li className="pr-16 pt-16">
+                <a href="www.google.com" className="p-0 m-0">
+                  <Image
+                    src={require('./../../assets/images/feature-tile-icon-19.svg')}
+                    alt="Features tile icon 01"
+                    />
+                </a>
+              </li>
+              <li className="pt-16">
+                <a href="www.google.com" className="p-0 m-0">
+                  <Image
+                    src={require('./../../assets/images/feature-tile-icon-09.svg')}
+                    alt="Features tile icon 01"
+                    />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
