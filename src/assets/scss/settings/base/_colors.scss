@@ -32,6 +32,9 @@ $palette: (
 		error: #FF6171,
 		warning: #FFA173,
 		success: #24E5AF
+	),
+	blueLight: (
+		1: #7F8CFF,
 	)
 );
 
@@ -47,6 +50,7 @@ $color: (
 	error:					get-color(alert, error),
 	warning:				get-color(alert, warning),
 	success:				get-color(alert, success),
+	blueLink:				get-color(blueLight, 1),
 	// ↓ Inverted colors
 	heading-inverse:		get-color(dark, 1),
 	base-inverse:			get-color(light, 3),

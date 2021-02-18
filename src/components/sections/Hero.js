@@ -69,10 +69,18 @@ const Hero = ({
                 Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
               </p>
             </div>
-            <span>LET'S CONNECT</span>
+            <a href="www.google.com">LET'S CONNECT</a>
             <ul>
-              <li><a href="#">dd</a></li>
-              <li><a href="#">dd</a></li>
+              <li>
+                <a href="www.google.com">
+                  <Image
+                    src={require('./../../assets/images/feature-tile-icon-04.svg')}
+                    alt="Features tile icon 01"
+                    width={64}
+                    height={64} />
+                </a>
+              </li>
+              <li><a href="www.google.com">dd</a></li>
             </ul>
           </div>
         </div>

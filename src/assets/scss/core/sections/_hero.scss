@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
 	background-color:rgba(255, 255, 255, 0.1);
-	min-height: 100vh;
+	min-height: 916px;
 	.section-inner {
 		padding-top: $hero--padding-t__mobile;
 		padding-bottom: $hero--padding-b__mobile;
@@ -17,6 +17,10 @@
 	> .hero-content + .hero-figure,
 	> .hero-figure + .hero-content {
 		margin-top: $hero--inner-padding-v_mobile;
+
+		.hero-content a {
+			@include font-size(link-desktop);
+		}
 	}
 
 	> .hero-figure {
@@ -72,6 +76,10 @@
 		> .hero-content + .hero-figure,
 		> .hero-figure + .hero-content {
 			margin-top: $hero--inner-padding-v_desktop;
+		}
+
+		.hero-content a {			
+			@include font-size(link-desktop);
 		}
 	}
 }
