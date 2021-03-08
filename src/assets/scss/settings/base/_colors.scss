@@ -16,13 +16,20 @@ $palette: (
 		1: #344563,
 		2: #172B4D,
 		3: #6B778C,
-		4: #C1C7D0
+		4: #C1C7D0		
+	),
+	customColors: (
+		1: #091E42,
+		2: #FFFFFF,
+		3: #DFE1E6
 	),
 	primary: (
 		1: #6163FF,
 		2: #ACADFF,
 		3: #5658DD,
-		4: #E9E9FF
+		4: #E9E9FF,
+		5: #dcdcff,
+		6: #6070FF
  	),
 	secondary: (
 		1: #24E5AF,
@@ -61,7 +68,12 @@ $color: (
 	low-contrast-inverse: 	get-color(light, 3),
 	customBlue1: 	get-color(customLink, 1),
 	customBlue3: 	get-color(customLink, 3),
-	customBlue4: 	get-color(customLink, 4)
+	customBlue4: 	get-color(customLink, 4),
+	customColor1: 	get-color(customColors, 1),
+	techLabel: get-color(primary, 5),
+	techText: get-color(primary, 6),
+	customWhite: get-color(customColors, 2),
+	borderSplit: get-color(customColors, 3)
 );
 
 // Borders and dividers: color
