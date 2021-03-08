@@ -88,36 +88,79 @@
 			flex-wrap: nowrap;
 			align-items: flex-start;
 			justify-content: flex-start;
+			background-color: color(customWhite);
+			border-radius: 24px;
+			border: 1px solid color(borderSplit);
+			margin-bottom: 142px;
+			padding: 24px;
 
 			.split-item-content {
 				flex-shrink: 0;
 				width: ($container--width-sm / 2) - $split-item-content--padding-h;
 				margin-bottom: 0;
 				margin-right: $split-item--inner-padding-h;
-				.split-item-list ul{
-					display: flex;
-					flex-flow: row;
-					list-style: none;
+				
+
+				& h3 {
+					color: color(customColor1);
 				}
-				.split-item-list ul li{
+
+				& p {
+					@include font-size(xs);
+					color: color(customBlue1);
+				}
+			}
+
+			.split-item-languages{				
+				& ul {
+					@include font-size(xxxs);
+					list-style: none;
+					display: flex;
+					flex-flow: row;					
+					padding-top: 24px;
+				}
+				& li{
+					background-color: color(techLabel);
+					border-radius: 8px;
+					align-items: center;
+					padding: 4px 12px;
+					flex: none;
+					order: 2;
+					flex-grow: 0;
+					margin: 0px 8px;
+					color: color(techText);
+				}	
+				& :first-child{
+					margin: 0px 8px 0px 0px;
+				}
+			}
+
+			.item_list{
+				display: flex;
+				flex-flow: row;
+				list-style: none;
+
+				& li {
 					width: auto;
 					text-transform: capitalize;
 					color: color(customBlue3);
 					@include font-size(sm);
+
+					& span {
+						color: color(customBlue4);	
+					}
 				}
-				.split-item-list ul li span{
-					color: color(customBlue4);
-				}
-				.split-item-list ul li:first-child{
+				& :first-child{
 					color: color(customBlue1);
 					text-transform: uppercase;
 					@include font-size(sm);
 				}
 			}
-
-			.split-item-image {
-				min-width: ($container--width-sm / 2) - $split-item-image--padding-h;
+			.split-item-image img{				
+				// min-width: ($container--width / 2) - $split-item-image--padding-h;
+				min-width: 200px;
 			}
+			
 		}
 
 		&:not(.invert-desktop) .split-item:nth-child(even),
