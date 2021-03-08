@@ -66,19 +66,29 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <h3 className="mt-0 mb-12">
+                <h3 className="mb-16 p-0">
                   Hospital Appointment System
                 </h3>
-                <div className="split-item-list text-xxs text-color-primary fw-600 tt-u mb-8">
-                  <ul className="m-0 p-0">
+                <div className="p-0 mb-32 mt-0">
+                  <ul className="item_list m-0 p-0">
                     <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
                     <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
                     <li className="m-0 p-0">2020</li>
                   </ul>
                 </div>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
                 </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>Ruby and Rails</li>
+                    <li>Ruby</li>
+                    <li>React</li>
+                  </ul>
+                </div>
+                <div>
+                  
+                </div>
               </div>
               <div className={
                 classNames(
@@ -88,9 +98,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item">
                 <Image
                   src={require('./../../assets/images/portfolio1.png')}
-                  alt="Features split 01"
-                  width={528}
-                  height={396} />
+                  alt="Project Appointment"/>
               </div>
             </div>
 
