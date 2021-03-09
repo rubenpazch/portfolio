@@ -21,7 +21,8 @@ $palette: (
 	customColors: (
 		1: #091E42,
 		2: #FFFFFF,
-		3: #DFE1E6
+		3: #DFE1E6,
+		4: #396DF2
 	),
 	primary: (
 		1: #6163FF,
@@ -73,7 +74,8 @@ $color: (
 	techLabel: get-color(primary, 5),
 	techText: get-color(primary, 6),
 	customWhite: get-color(customColors, 2),
-	borderSplit: get-color(customColors, 3)
+	borderSplit: get-color(customColors, 3),
+	buttonBg: get-color(customColors, 3)
 );
 
 // Borders and dividers: color
