@@ -2,13 +2,13 @@
 
 // Background color
 $modal--bg: (
-	modal: get-color(dark, 2),
+	modal: get-color(customColors, 2),
 	modal-outer: rgba(get-color(dark, 1), .88)
 );
 
 // More modal settings
 $modal--min-width:			 		null;		// modal min-width
-$modal--max-width:			 		520px;		// modal max-width
+$modal--max-width:			 		1056px;		// modal max-width
 $modal-video--max-width:			1024px;		// modal video max-width
 $modal--outer-padding-v__mobile: 	16px;		// modal, outer top and bottom padding (mobile)
 $modal--outer-padding-v__desktop: 	48px;		// modal, outer top and bottom padding (desktop)
