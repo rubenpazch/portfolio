@@ -120,7 +120,8 @@
 					@include font-size(xxxs);
 					list-style: none;
 					display: flex;
-					flex-flow: row;					
+					flex-flow: row;	
+					flex-wrap: wrap;				
 					padding-top: 24px;
 				}
 				& li{
