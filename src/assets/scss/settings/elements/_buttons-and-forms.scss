@@ -7,7 +7,7 @@ $button-form--group-padding: 	12px;		// padding separating input from button in 
 
 // Buttons: text color
 $button--color: (
-	button-light: 		get-color(dark, 2),
+	button-light: get-color(customColors, 4),
 	button-dark: 		get-color(light, 1),
 	button-primary: 	get-color(light, 1),
 	button-secondary:	get-color(light, 1),
@@ -16,7 +16,7 @@ $button--color: (
 
 // Buttons: background color
 $button--bg: (
-	button-light: 			get-color(light, 1),
+	button-light: 			get-color(customColors, 2),
 	button-light-hover: 	darken(get-color(light, 1), 5%),
 	button-dark: 			get-color(dark, 2),
 	button-dark-hover: 		lighten(get-color(dark, 2), 2%),
@@ -29,7 +29,7 @@ $button--bg: (
 
 // Buttons: border color
 $button--border: (
-	button-light: 			transparent,	// button-light is default (.button), so if it's transparent you can set all other values to null
+	button-light: get-color(customColors, 4),	// button-light is default (.button), so if it's transparent you can set all other values to null
 	button-light-hover: 	null,
 	button-dark: 			null,
 	button-dark-hover: 		null,
@@ -55,7 +55,7 @@ $button--padding-h: 			32px;		// button, left and right padding
 $button-sm--padding-h:			24px;		// button (small), left and right padding
 $button-w-form--padding-h:		24px;		// button, left and right padding in a form group (.form-group) - Overrides button default padding
 $button-sm-w-form--padding-h:	null;		// button (small), left and right padding in a form group (.form-group) - Overrides button default padding
-$button--radius: 				2px;		// button radius (never use null)
+$button--radius: 				8px;		// button radius (never use null)
 $button--transform: 			null;	    // button text-transform property (null is allowed)
 $button--max-size-mobile: 		280px;		// button max width on mobile (.button-wide-mobile)
 $button-group-padding: 			16px;		// padding between sibling buttons (nested into .button-group)
