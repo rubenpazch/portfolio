@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
+import Modal from '../elements/Modal';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -27,6 +28,18 @@ const FeaturesSplit = ({
   imageFill,
   ...props
 }) => {
+
+  const [videoModalActive, setVideomodalactive] = useState(false);
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(true);
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(false);
+  }   
 
   const outerClasses = classNames(
     'features-split section',
@@ -78,22 +91,19 @@ const FeaturesSplit = ({
                   </ul>
                 </div>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua 
+                The application has the ability to register new users, login into the application creating a token session, when we are logged in to the application we can select a service (Surgery, Medicine, and others), each of the options shows different doctors and their attendance availability, finally, we can create an appointment for a specific date and service.
                 </p>
                 <div className="split-item-languages m-0 p-0">
                   <ul className="m-0 p-0">
-                    <li>Ruby and Rails</li>
-                    <li>Ruby</li>
-                    <li>React</li>
+                    <li>Ruby and Rails</li>                    
+                    <li>React & Redux</li>
+                    <li>Postgres</li>
+                    <li>API Rest</li>
                   </ul>
                 </div>
-                <Button tag="a" color="light" wideMobile href="https://cruip.com/" className="mt-32">
+                <Button tag="a" color="light" wideMobile href="https://cruip.com/" className="mt-32" onClick={openModal}>
                   See Project
                 </Button>
-                <div>
-                  
-                </div>
               </div>
               <div className={
                 classNames(
@@ -106,6 +116,13 @@ const FeaturesSplit = ({
                   alt="Project Appointment"/>
               </div>
             </div>
+            <Modal
+              id="video-modal"
+              show={videoModalActive}
+              handleClose={closeModal}
+              children={"<h1>casa</h1>"}
+              videoTag="iframe"
+            />  
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">

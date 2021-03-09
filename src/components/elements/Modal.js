@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import Image from '../elements/Image';
+import Button from '../elements/Button';
 
 const propTypes = {
   children: PropTypes.node,
@@ -74,36 +76,62 @@ const Modal = ({
           className={classes}
           onClick={handleClose}
         >
-          <div className="modal-inner" onClick={stopProgagation}>
-            {video ?
-              <div className="responsive-video">
-                {videoTag === 'iframe' ?
-                  <iframe
-                    title="video"
-                    src={video}
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe> :
-                  <video
-                    v-else
-                    controls
-                    src={video}
-                  ></video>
-                }
-              </div> :
-              <>
-                {!closeHidden &&
-                  <button
-                    className="modal-close"
-                    aria-label="close"
-                    onClick={handleClose}
-                  ></button>
-                }
-                <div className="modal-content">
-                  {children}
-                </div>
-              </>
+          
+          <div className="modal-inner p-16" onClick={stopProgagation} >
+            <div className="header-modal m-0">
+              <h3 className="m-0 p-0">Title</h3>
+              <div className="p-0 m-0">
+                  <ul className="title-list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+              </div>
+            </div>
+             
+            <div className="image-content" >
+                <Image
+                  src={require('./../../assets/images/portfolio1.png')}
+                  alt="Project Appointment"
+                  width={396}
+                  height={404} />
+            </div>
+            
+
+            {!closeHidden &&
+              <button
+                className="modal-close"
+                aria-label="close"
+                onClick={handleClose}
+              ></button>
             }
+
+            
+            <div className="modal-content m-0 p-0"> 
+              <div className="information-content">
+                <p className="text-section-modal p-8">
+                The application has the ability to register new users, login into the application creating a token session, when we are logged in to the application we can select a service (Surgery, Medicine, and others), each of the options shows different doctors and their attendance availability, finally, we can create an appointment for a specific date and service.
+                The application has the ability to register new users, login into the application creating a token session, when we are logged in to the application we can select a service (Surgery, Medicine, and others), each of the options shows different doctors and their attendance availability, finally, we can create an appointment for a specific date and service.
+                </p>
+                <div className="links-section-modal">
+                  <div className="split-item-languages m-0 p-0">
+                    <ul className="m-0 p-0">
+                      <li>Ruby and Rails</li>                    
+                      <li>React & Redux</li>
+                      <li>Postgres</li>
+                      <li>API Rest</li>
+                    </ul>
+                  </div>
+
+                  <Button tag="a" color="light" wideMobile href="https://cruip.com/" className="mt-32">
+                    See Project
+                  </Button>
+                  <Button tag="a" color="light" wideMobile href="https://cruip.com/" className="mt-32">
+                    See Project
+                  </Button>
+                </div>
+              </div>
+            </div>            
           </div>
         </div>
       }
