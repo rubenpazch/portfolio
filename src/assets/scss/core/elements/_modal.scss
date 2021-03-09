@@ -62,10 +62,84 @@
 	margin-left: $container--padding__mobile;
 	margin-right: $container--padding__mobile;
 	background: color-bg(modal);
+	border-radius: 16px;
+	
+
+	& .header-modal {		
+		width: auto;
+		display: flex;
+		flex-flow: column;
+		& .title-list{
+			list-style: none;
+			display: flex;
+			flex-flow: row;	
+			flex-wrap: wrap;
+		}
+		& li{
+			width: auto;
+			text-transform: capitalize;
+			color: color(customBlue3);
+			@include font-size(xxs);
+
+			& span {
+				color: color(customBlue4);	
+			}
+		}
+	}	
+	& .image-content{
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 .modal-content {
-	padding: $modal--inner-padding-v__mobile $modal--inner-padding-h__mobile;
+	// padding: $modal--inner-padding-v__mobile $modal--inner-padding-h__mobile;
+	padding: 0;
+}
+
+.information-content {
+	display: flex;
+	flex-flow: row;
+
+	& p {
+		@include font-size(xs);
+	}
+}
+
+.text-section-modal {
+	width: 65%;
+}
+
+.links-section-modal {
+	width: 35%;
+
+	& .split-item-languages{
+		& ul {
+			@include font-size(xxxs);
+			list-style: none;
+			display: flex;
+			flex-flow: row;	
+			flex-wrap: wrap;				
+			padding-top: 14px;
+		}
+		& li{
+			background-color: color(techLabel);
+			border-radius: 8px;
+			align-items: center;
+			padding: 4px 12px;
+			flex: none;
+			order: 2;
+			flex-grow: 0;
+			margin: 0px 8px 8px 0px;
+			color: color(techText);
+		}	
+		& :first-child{
+			margin: 0px 8px 8px 0px;
+		}
+	}
 }
 
 .modal-close {
