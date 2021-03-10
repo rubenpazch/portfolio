@@ -128,7 +128,7 @@ const Modal = ({
                         techList.null
                         ? <span>No list</span>
                         : <>
-                            {techList.map(item => ( <li id={item.id} className="m-0">{item.name}</li> ))}
+                            {techList.map(item => ( <li key={item.id} className="m-0">{item.name}</li> ))}
                           </>
                       }
                       
