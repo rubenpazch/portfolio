@@ -95,7 +95,7 @@ const FeaturesSplit = ({
                 </p>
                 <div className="split-item-languages m-0 p-0">
                   <ul className="m-0 p-0">
-                    <li>Ruby and Rails</li>                    
+                    <li>Ruby and Rails</li>
                     <li>React & Redux</li>
                     <li>Postgres</li>
                     <li>API Rest</li>
@@ -115,14 +115,24 @@ const FeaturesSplit = ({
                   src={require('./../../assets/images/portfolio1.png')}
                   alt="Project Appointment"/>
               </div>
+              <Modal
+                id="video-modal"
+                show={videoModalActive}
+                handleClose={closeModal}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="Hospital Appointment System"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="Hospital Appointment System is a web application tablet version, this application was build using ROR and React & Redux the latest version, includes the ability to register new users, login into the application creating a token session, when we are logged in the application we can select a service (Surgery, Medicine and others), each of the options show different doctors and their attendance availability, finally we can create an appointment for a specific date and service."
+                featureImage="portfolio1.png"
+                techList={[{id: 1 ,name: "Ruby and Rails"}, {id: 2 ,name:"React & Redux"}, {id: 2 ,name:"Postgres"}, {id: 2 ,name:"API Rest"}]}
+                linkGithub={"https://github.com/rubenpazch/appointment-view"}
+                linkLivePreview={"https://agile-lowlands-59460.herokuapp.com/Dashboard"}
+              />  
             </div>
-            <Modal
-              id="video-modal"
-              show={videoModalActive}
-              handleClose={closeModal}
-              children={"<h1>casa</h1>"}
-              videoTag="iframe"
-            />  
+            
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
