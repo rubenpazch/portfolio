@@ -29,6 +29,15 @@ const Modal = ({
   closeHidden,
   video,
   videoTag,
+  titleContent,
+  companyContent,
+  roleContent,
+  yearContent,
+  projectContent,
+  featureImage,
+  techList,
+  linkGithub,
+  linkLivePreview,
   ...props
 }) => {
 
@@ -79,19 +88,19 @@ const Modal = ({
           
           <div className="modal-inner p-16" onClick={stopProgagation} >
             <div className="header-modal m-0">
-              <h3 className="m-0 p-0">Title</h3>
+              <h3 className="m-0 p-0">{titleContent}</h3>
               <div className="p-0 m-0">
                   <ul className="title-list m-0 p-0">
-                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
-                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
-                    <li className="m-0 p-0">2020</li>
+                    <li className="m-0 p-0">{companyContent} <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">{roleContent} <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">{yearContent}</li>
                   </ul>
               </div>
             </div>
              
             <div className="image-content" >
                 <Image
-                  src={require('./../../assets/images/portfolio1.png')}
+                  src={require(`./../../assets/images/${featureImage}`)}
                   alt="Project Appointment"
                   width={396}
                   height={404} />
@@ -110,24 +119,27 @@ const Modal = ({
             <div className="modal-content m-0 p-0"> 
               <div className="information-content">
                 <p className="text-section-modal p-8">
-                The application has the ability to register new users, login into the application creating a token session, when we are logged in to the application we can select a service (Surgery, Medicine, and others), each of the options shows different doctors and their attendance availability, finally, we can create an appointment for a specific date and service.
-                The application has the ability to register new users, login into the application creating a token session, when we are logged in to the application we can select a service (Surgery, Medicine, and others), each of the options shows different doctors and their attendance availability, finally, we can create an appointment for a specific date and service.
+                  {projectContent}
                 </p>
                 <div className="links-section-modal">
                   <div className="split-item-languages m-0 p-0">
                     <ul className="m-0 p-0">
-                      <li>Ruby and Rails</li>                    
-                      <li>React & Redux</li>
-                      <li>Postgres</li>
-                      <li>API Rest</li>
+                      {
+                        techList.null
+                        ? <span>No list</span>
+                        : <>
+                            {techList.map(item => ( <li id={item.id} className="m-0">{item.name}</li> ))}
+                          </>
+                      }
+                      
                     </ul>
                   </div>
 
-                  <Button tag="a" color="light" wideMobile href="https://cruip.com/" className="mt-32">
-                    See Project
+                  <Button tag="a" color="light" wideMobile href={linkLivePreview} className="mt-32 mr-16" >
+                    See Live
                   </Button>
-                  <Button tag="a" color="light" wideMobile href="https://cruip.com/" className="mt-32">
-                    See Project
+                  <Button tag="a" color="light" wideMobile href={linkGithub} className="mt-32">
+                    See Source
                   </Button>
                 </div>
               </div>
