@@ -131,7 +131,6 @@ const Modal = ({
                             {techList.map(item => ( <li key={item.id} className="m-0">{item.name}</li> ))}
                           </>
                       }
-                      
                     </ul>
                   </div>
 
