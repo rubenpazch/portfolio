@@ -65,14 +65,13 @@ const Hero = ({
             </h2>
             <div className="container-sm text-hero">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                La satisfaccion de saber que esforsaste mucho y lograste resolver un problema, ser un desarrollador web me ayuda a reinventarme cada día.
-                The satisfaction of knowing that you tried hard and managed to solve a problem, being a <b>web developer</b> helps me reinvent myself every day.
+              The satisfaction of knowing that you tried hard and managed to solve a problem feels great, being a web developer helps me reinvent myself every day.
               </p>
             </div>
-            <a href="www.google.com">LET'S CONNECT</a>
+            <a href="https://www.linkedin.com/in/rubenpch/">LET'S CONNECT</a>
             <ul className="d-flex flex-row p-0 m-0">
               <li className="pr-16 pt-16">
-                <a href="www.google.com" className="p-0 m-0">
+                <a href="https://twitter.com/ChuspePaz" className="p-0 m-0">
                   <Image
                     src={require('./../../assets/images/feature-tile-icon-07.svg')}
                     alt="Features tile icon 01"
@@ -80,7 +79,7 @@ const Hero = ({
                 </a>
               </li>
               <li className="pr-16 pt-16">
-                <a href="www.google.com" className="p-0 m-0">
+                <a href="https://www.linkedin.com/in/rubenpch/" className="p-0 m-0">
                   <Image
                     src={require('./../../assets/images/feature-tile-icon-08.svg')}
                     alt="Features tile icon 01"
@@ -88,7 +87,7 @@ const Hero = ({
                 </a>
               </li>
               <li className="pr-16 pt-16">
-                <a href="www.google.com" className="p-0 m-0">
+                <a href="https://angel.co/u/ruben-paz-chuspe" className="p-0 m-0">
                   <Image
                     src={require('./../../assets/images/feature-tile-icon-15.svg')}
                     alt="Features tile icon 01"                    
@@ -96,7 +95,7 @@ const Hero = ({
                 </a>
               </li>
               <li className="pr-16 pt-16">
-                <a href="www.google.com" className="p-0 m-0">
+                <a href="https://medium.com/@rubenpazchuspe.rpc" className="p-0 m-0">
                   <Image
                     src={require('./../../assets/images/feature-tile-icon-17.svg')}
                     alt="Features tile icon 01"
@@ -104,7 +103,7 @@ const Hero = ({
                 </a>
               </li>
               <li className="pr-16 pt-16">
-                <a href="www.google.com" className="p-0 m-0">
+                <a href="https://stackoverflow.com/users/8272786/ruben-paz-chuspe?tab=profile" className="p-0 m-0">
                   <Image
                     src={require('./../../assets/images/feature-tile-icon-19.svg')}
                     alt="Features tile icon 01"
@@ -112,7 +111,7 @@ const Hero = ({
                 </a>
               </li>
               <li className="pt-16">
-                <a href="www.google.com" className="p-0 m-0">
+                <a href="https://github.com/rubenpazch" className="p-0 m-0">
                   <Image
                     src={require('./../../assets/images/feature-tile-icon-09.svg')}
                     alt="Features tile icon 01"
