@@ -197,6 +197,9 @@
 			& li{
 				@include font-size(textMobile);
 			}
+			.title-list{
+				margin-top: 16px;
+			}
 		}
 
 		.information-content {
@@ -215,13 +218,16 @@
 
 			.links-section-modal {
 				width: 100%;
-
+				a {
+					width: 150px;
+					margin-top: 16px;
+					margin-bottom: 16px;
+				}
 				.split-item-languages ul {
 					padding-top: 8px;
 				}
 			}
 		}
-		
 	}
 
 	.image-content {			
