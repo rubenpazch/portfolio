@@ -34,6 +34,10 @@ const FeaturesSplit = ({
   const [videoModalActive3, setVideomodalactive3] = useState(false);
   const [videoModalActive4, setVideomodalactive4] = useState(false);
   const [videoModalActive5, setVideomodalactive5] = useState(false);
+  const [videoModalActive6, setVideomodalactive6] = useState(false);
+  const [videoModalActive7, setVideomodalactive7] = useState(false);
+  const [videoModalActive8, setVideomodalactive8] = useState(false);
+  const [videoModalActive9, setVideomodalactive9] = useState(false);
 
   const openModal1 = (e) => {
     e.preventDefault();
@@ -83,6 +87,46 @@ const FeaturesSplit = ({
   const closeModal5 = (e) => {
     e.preventDefault();
     setVideomodalactive5(false);
+  }
+
+  const openModal6 = (e) => {
+    e.preventDefault();
+    setVideomodalactive6(true);   
+  }
+
+  const closeModal6 = (e) => {
+    e.preventDefault();
+    setVideomodalactive6(false);
+  }
+
+  const openModal7 = (e) => {
+    e.preventDefault();
+    setVideomodalactive7(true);   
+  }
+
+  const closeModal7 = (e) => {
+    e.preventDefault();
+    setVideomodalactive7(false);
+  }
+
+  const openModal8 = (e) => {
+    e.preventDefault();
+    setVideomodalactive8(true);   
+  }
+
+  const closeModal8 = (e) => {
+    e.preventDefault();
+    setVideomodalactive8(false);
+  }
+
+  const openModal9 = (e) => {
+    e.preventDefault();
+    setVideomodalactive9(true);   
+  }
+
+  const closeModal9 = (e) => {
+    e.preventDefault();
+    setVideomodalactive9(false);
   }
 
   const outerClasses = classNames(
@@ -167,7 +211,7 @@ const FeaturesSplit = ({
                 handleClose={closeModal1}
                 children={"<h1>casa</h1>"}
                 videoTag="iframe"
-                titleContent="Hospital Appointment System"
+                titleContent="Hospital Appointment"
                 companyContent="Microverse"
                 roleContent="Full Stack Developer"
                 yearContent="2020"
@@ -383,7 +427,7 @@ const FeaturesSplit = ({
                   </ul>
                 </div>
                 <p className="m-0">
-                Shooter game is a project built using JavaScript and the game engine Phaser. In order to learn how to build games with Phaser 3 and Webpack 4
+                Shooter game is a project built using JavaScript and the game engine Phaser. In order to learn how to build games with Phaser 3 and Webpack 4.
                 </p>
                 <div className="split-item-languages m-0 p-0">
                   <ul className="m-0 p-0">
@@ -417,6 +461,239 @@ const FeaturesSplit = ({
                 linkLivePreview={"https://morning-taiga-75196.herokuapp.com/"}
               />  
             </div>
+                  
+            <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio6.png')}
+                  alt="Project Appointment"/>
+              </div>
+
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-16 p-0">
+                SASS Linter with Ruby
+                </h3>
+                <div className="p-0 mb-8 mt-0">
+                  <ul className="item_list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
+                <p className="m-0">
+                SASS linter with Ruby is a command-line application built entirely with Ruby, like a developer sometimes we have some good programming practices to apply in our code, writing clean code is always good, it helps other programmers to maintain the application.
+                </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>Ruby</li>
+                    <li>SASS</li>
+                    <li>OOP</li>
+                    <li>Ruby Modules</li>
+                  </ul>
+                </div>
+                <Button tag="a" color="light" wideMobile href="#" className="mt-32" onClick={openModal6}>
+                  See Project
+                </Button>
+              </div>
+              
+              <Modal
+                id="video-modal"
+                show={videoModalActive6}
+                handleClose={closeModal6}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="SASS Linter with Ruby"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="SASS linter with Ruby is a command-line application built entirely with Ruby, like a developer sometimes we have some good programming practices to apply in our code, writing clean code is always good, it helps other programmers to maintain the application, this app checks if you had written your code using good practices and left you know which line and column need to be changed, for example (Comment white space inside after, Comment white space inside before, Unexpected missing end of source newline, Expected empty line before the comment, Expected indentation of zero spaces, Expected indentation of 2 spaces), are features from this project.."
+                featureImage="portfolio6.png"
+                techList={[{id: 1 ,name: "Ruby"}, {id: 2 ,name:"SASS"}, {id: 3 ,name:"OOP"}, {id: 4 ,name:"Ruby Modules"}]}
+                linkGithub={"https://github.com/rubenpazch/capstone-project-linter-parses-files"}
+                linkLivePreview={"https://repl.it/@RubenPaz/capstone-project-linter-parses-files"}
+              />  
+            </div>
+
+            <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio7.png')}
+                  alt="Project Appointment"/>
+              </div>
+
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-16 p-0">
+                Conference Page
+                </h3>
+                <div className="p-0 mb-8 mt-0">
+                  <ul className="item_list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
+                <p className="m-0">
+                Conference Page is a static site developed using HTML, CSS, Javascript, SASS, Font Awesome, it was used FlexBox to build the layout from the entire website. 
+                </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>HTML</li>
+                    <li>SASS</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>font-awesome</li>
+                  </ul>
+                </div>
+                <Button tag="a" color="light" wideMobile href="#" className="mt-32" onClick={openModal7}>
+                  See Project
+                </Button>
+              </div>
+              
+              <Modal
+                id="video-modal"
+                show={videoModalActive7}
+                handleClose={closeModal7}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="Conference Page"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="Conference Page is a static site developed using HTML, CSS, Javascript, SASS, Font Awesome, it was used FlexBox to build the layout from the entire website. To build this site it was given an initial design and some basic specifications from the client, the content of this project were personalized for a Workshop E-commerce if a company wants to promote an event for a conference, congress or any activity related with education, they can use this site, there is a section to show information some general information, show all program information, featured speakers, partners, tickers."
+                featureImage="portfolio7.png"
+                techList={[{id: 1 ,name: "HTML"}, {id: 2 ,name:"SASS"}, {id: 3 ,name:"CSS"}, {id: 4 ,name:"Javascript"}, {id: 5 ,name:"font-awesome"}]}
+                linkGithub={"https://github.com/rubenpazch/capstone-conference-page"}
+                linkLivePreview={"https://compassionate-nightingale-93193a.netlify.app/"}
+              />  
+            </div>
+
+            <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio8.png')}
+                  alt="Project Appointment"/>
+              </div>
+
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-16 p-0">
+                Bookstore React Redux App
+                </h3>
+                <div className="p-0 mb-8 mt-0">
+                  <ul className="item_list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
+                <p className="m-0">
+                Bookstore Redux App is a web application built with react and redux, this web application has a booklist component to show all books, book form to create new books, apply some filter to list of books, filter books by categories.
+                </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>Javascript 6</li>
+                    <li>NPM</li>                    
+                    <li>Redux</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <Button tag="a" color="light" wideMobile href="#" className="mt-32" onClick={openModal8}>
+                  See Project
+                </Button>
+              </div>
+              
+              <Modal
+                id="video-modal"
+                show={videoModalActive8}
+                handleClose={closeModal8}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="Bookstore React Redux App"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="Bookstore Redux App is a web application built with react and redux, this web application has a booklist component to show all books, book form to create new books, apply some filter to list of books, filter books by categories."
+                featureImage="portfolio8.png"
+                techList={[{id: 1 ,name: "Javascript 6"}, {id: 2 ,name:"NPM"}, {id: 3 ,name:"Redux"}, {id: 4 ,name:"React"}, {id: 5 ,name:"Bootstrap"}]}
+                linkGithub={"https://github.com/rubenpazch/bookstore-redux"}
+                linkLivePreview={"https://bookstore-reactredux.herokuapp.com/"}
+              />  
+            </div>
+                  
+            <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio9.png')}
+                  alt="Project Appointment"/>
+              </div>
+
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-16 p-0">
+                NewsWeek Clone
+                </h3>
+                <div className="p-0 mb-8 mt-0">
+                  <ul className="item_list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
+                <p className="m-0">
+                Newsweek.com is a news website for this project I did clone the full website using HTML, CSS, and Bootstrap, the website has many sections like feature stories, opinion, more histories, culture and travel, top stories, ads section, latest news, in the magazine, tech & science, footer.
+                </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>HTML</li>
+                    <li>SASS</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>font-awesome</li>
+                  </ul>
+                </div>
+                <Button tag="a" color="light" wideMobile href="#" className="mt-32" onClick={openModal9}>
+                  See Project
+                </Button>
+              </div>
+              
+              <Modal
+                id="video-modal"
+                show={videoModalActive9}
+                handleClose={closeModal9}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="NewsWeek Clone"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="Newsweek.com is a news website for this project I did clone the full website using HTML, CSS, and Bootstrap, the website has many sections like feature stories, opinion, more histories, culture and travel, top stories, ads section, latest news, in the magazine, tech & science, footer, all this section have a specific behavior depending on the device. This is a responsive site ready to use in Mobile, Laptop, or Tablet. Finally, I have to mention that to build this project it was used the best programming practices relative to front end development."
+                featureImage="portfolio9.png"
+                techList={[{id: 1 ,name: "HTML"}, {id: 2 ,name:"SASS"}, {id: 3 ,name:"CSS"}, {id: 4 ,name:"Javascript"}, {id: 5 ,name:"font-awesome"}]}
+                linkGithub={"https://github.com/rubenpazch/Newsweek-com-Bootstrap-"}
+                linkLivePreview={"https://happy-stonebraker-bc9837.netlify.app/"}
+              />  
+            </div>
+
+
           </div>
         </div>
       </div>
