@@ -32,6 +32,8 @@ const FeaturesSplit = ({
   const [videoModalActive1, setVideomodalactive1] = useState(false);
   const [videoModalActive2, setVideomodalactive2] = useState(false);
   const [videoModalActive3, setVideomodalactive3] = useState(false);
+  const [videoModalActive4, setVideomodalactive4] = useState(false);
+  const [videoModalActive5, setVideomodalactive5] = useState(false);
 
   const openModal1 = (e) => {
     e.preventDefault();
@@ -61,6 +63,26 @@ const FeaturesSplit = ({
   const closeModal3 = (e) => {
     e.preventDefault();
     setVideomodalactive3(false);
+  }
+
+  const openModal4 = (e) => {
+    e.preventDefault();
+    setVideomodalactive4(true);   
+  }
+
+  const closeModal4 = (e) => {
+    e.preventDefault();
+    setVideomodalactive4(false);
+  }
+
+  const openModal5 = (e) => {
+    e.preventDefault();
+    setVideomodalactive5(true);   
+  }
+
+  const closeModal5 = (e) => {
+    e.preventDefault();
+    setVideomodalactive5(false);
   }
 
   const outerClasses = classNames(
@@ -101,6 +123,17 @@ const FeaturesSplit = ({
           <div className={splitClasses}>
 
             <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio1.png')}
+                  alt="Project Appointment"/>
+              </div>
+
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-16 p-0">
                   Hospital Appointment System
@@ -127,16 +160,7 @@ const FeaturesSplit = ({
                   See Project
                 </Button>
               </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/portfolio1.png')}
-                  alt="Project Appointment"/>
-              </div>
+              
               <Modal
                 id="video-modal"
                 show={videoModalActive1}
@@ -156,6 +180,17 @@ const FeaturesSplit = ({
             </div>
 
             <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio3.png')}
+                  alt="Project Appointment"/>
+              </div>
+
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-16 p-0">
                   e-Tours Web Application
@@ -186,16 +221,7 @@ const FeaturesSplit = ({
                   
                 </div>
               </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/portfolio3.png')}
-                  alt="Project Appointment"/>
-              </div>
+     
               <Modal
                 id="video-modal"
                 show={videoModalActive3}
@@ -215,6 +241,17 @@ const FeaturesSplit = ({
             </div>
             
             <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio2.png')}
+                  alt="Project Appointment"/>
+              </div>
+
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-16 p-0">
                   Weather App
@@ -243,16 +280,7 @@ const FeaturesSplit = ({
                   
                 </div>
               </div>
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../assets/images/portfolio2.png')}
-                  alt="Project Appointment"/>
-              </div>
+        
               <Modal
                 id="video-modal"
                 show={videoModalActive2}
@@ -271,6 +299,124 @@ const FeaturesSplit = ({
               />  
             </div>
 
+            <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio4.png')}
+                  alt="Project Appointment"/>
+              </div>
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-16 p-0">
+                  Group our Wishlist
+                </h3>
+                <div className="p-0 mb-8 mt-0">
+                  <ul className="item_list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
+                <p className="m-0">
+                Group our Wishlist is a web application with responsive behavior for mobile usage built with Ruby on Rails this application is based on an app for grouping payments by a goal.
+                </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>Ruby and Rails</li>
+                    <li>Bootstrap</li>
+                    <li>Postgresql</li>
+                    <li>Heroku</li>
+                  </ul>
+                </div>
+                <Button tag="a" color="light" wideMobile href="#" className="mt-32" onClick={openModal4}>
+                  See Project
+                </Button>
+                <div>
+                  
+                </div>
+              </div>
+              
+              <Modal
+                id="video-modal"
+                show={videoModalActive4}
+                handleClose={closeModal4}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="Group our Wishlist"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="Group our Wishlist is a web application with responsive behavior for mobile usage built with Ruby on Rails this application is based on an app for grouping payments by a goal with your family/friends. Exploring this project you can find these options (login, sign-in, all my wishlist, all my external wishlist, all groups and log out, check out a wish list as an additional feature)."
+                featureImage="portfolio4.png"
+                techList={[{id: 1 ,name: "Ruby and Rails"}, {id: 2 ,name:"Bootstrap"}, {id: 3 ,name:"Postgresql"}, {id: 4 ,name:"Heroku"}]}
+                linkGithub={"https://github.com/rubenpazch/Group-our-transactions"}
+                linkLivePreview={"https://morning-taiga-75196.herokuapp.com/"}
+              />  
+            </div>
+            
+            <div className="split-item">
+
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/portfolio5.png')}
+                  alt="Project Appointment"/>
+              </div>
+
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-16 p-0">
+                  Shooter Game
+                </h3>
+                <div className="p-0 mb-8 mt-0">
+                  <ul className="item_list m-0 p-0">
+                    <li className="m-0 p-0">Microverse <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">Full Stack Developer <span className="pr-8 pl-8">&#8226;</span></li>
+                    <li className="m-0 p-0">2020</li>
+                  </ul>
+                </div>
+                <p className="m-0">
+                Shooter game is a project built using JavaScript and the game engine Phaser. In order to learn how to build games with Phaser 3 and Webpack 4
+                </p>
+                <div className="split-item-languages m-0 p-0">
+                  <ul className="m-0 p-0">
+                    <li>Javascript 6</li>
+                    <li>Webpack 4</li>
+                    <li>Phaser 3</li>                    
+                  </ul>
+                </div>
+                <Button tag="a" color="light" wideMobile href="#" className="mt-32" onClick={openModal5}>
+                  See Project
+                </Button>
+                <div>
+                  
+                </div>
+              </div>
+              
+              <Modal
+                id="video-modal"
+                show={videoModalActive5}
+                handleClose={closeModal5}
+                children={"<h1>casa</h1>"}
+                videoTag="iframe"
+                titleContent="Group our Wishlist"
+                companyContent="Microverse"
+                roleContent="Full Stack Developer"
+                yearContent="2020"
+                projectContent="Shooter game is a project built using JavaScript and the game engine Phaser. In order to learn how to build games with Phaser 3 and Webpack 4 the last version I did follow some tutorials and customize a previous example for building this amazing web application, the goal of this game is to kill different enemies shooting them and after finishing the two stages get a final score compared with other players score. Every stage increases the speed of how enemies appear."
+                featureImage="portfolio5.png"
+                techList={[{id: 1 ,name: "Javascript 6"}, {id: 2 ,name:"Webpack4"}, {id: 3 ,name:"Phaser 3"}]}
+                linkGithub={"https://github.com/rubenpazch/shooter-game"}
+                linkLivePreview={"https://morning-taiga-75196.herokuapp.com/"}
+              />  
+            </div>
           </div>
         </div>
       </div>
