@@ -79,7 +79,17 @@
 		> .hero-figure + .hero-content {
 			margin-top: $hero--inner-padding-v_desktop;
 		}
-
+		.hero-content {
+			margin-top: 62px;
+			& .text-hero {
+				& p {
+					@include font-size(xs);//font-size(xxxs)
+				}
+			}
+		}
+		.hero-content h2 {		
+			@include font-size(h3);
+		}
 		.hero-content a {			
 			@include font-size(link-desktop);
 		}

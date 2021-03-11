@@ -21,10 +21,12 @@ $font--scale: (
 	epsilon: 	( 20px, 30px, -0.1px ),
 	zeta:    	( 18px, 24px, -0.1px ),
 	eta:     	( 16px, 24px, -0.1px ),
+	qheta:   	( 15px, 22px, -0.1px ),
+	theta:   	( 14px, 22px, -0.1px ),
+	rheta:   	( 13px, 22px, -0.1px ),
 	zulu:     	( 12px, 20px, -0.1px ),
 	peta:     	( 48px, 58px, -0.3px ),
-	keta:     	( 40px, 52px, -0.3px ),
-	theta:   	( 14px, 22px, null )
+	keta:     	( 40px, 52px, -0.3px )
 );
 
 // Base elements: font size
@@ -41,6 +43,8 @@ $font--size: (
 	xxxs:			'zulu',
 	bquote: 		'epsilon',
 	figcap: 		'theta',
+	textMobile: 'rheta',
+	paragraphMobile: 'qheta',
 	code: 			'eta',
 	pre: 			'eta',
 	table: 			'eta',

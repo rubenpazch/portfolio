@@ -48,9 +48,82 @@
 	.split-wrap {
 
 		.split-item {
+			border-radius: 16px;
+			background-color: #fff;
+			padding: 16px;
+			margin-bottom: 88px;
 
 			.split-item-content {
 				margin-bottom: $split-item--inner-padding-v_mobile;
+				
+				& h3 {
+					color: color(customColor1);
+					@include font-size(h2);
+				}
+				& p {
+					@include font-size(paragraphMobile);
+					color: color(customBlue1);
+					text-align: left;
+				}
+			}
+
+			.split-item-languages{				
+				& ul {
+					@include font-size(xxxs);
+					list-style: none;
+					display: flex;
+					flex-flow: row;	
+					flex-wrap: wrap;				
+					padding-top: 24px;
+				}
+				& li{
+					background-color: color(techLabel);
+					border-radius: 8px;
+					align-items: center;
+					padding: 8px 12px;
+					flex: none;
+					order: 2;
+					flex-grow: 0;
+					margin: 0px 8px 8px 0px;
+					color: color(techText);
+				}	
+				& :first-child{
+					margin: 0px 8px 8px 0px;
+				}
+			}
+
+
+			.item_list{
+				display: flex;
+				flex-flow: row;
+				list-style: none;
+
+				& li {
+					width: auto;
+					text-transform: capitalize;
+					color: color(customBlue3);
+					@include font-size(textMobile);
+
+					& span {
+						color: color(customBlue4);	
+					}
+				}
+				& :first-child{
+					color: color(customBlue1);
+					text-transform: uppercase;
+					@include font-size(textMobile);
+				}
+			}
+
+			.split-item-image {			
+				width: 100%;
+				display: flex;
+				flex-flow: row;
+				justify-content: center;
+			}
+
+			.split-item-image img{			
+				width: 50%;
 			}
 		}
 
@@ -103,7 +176,6 @@
 				width: ($container--width-sm / 2) - $split-item-content--padding-h;
 				margin-bottom: 0;
 				margin-right: $split-item--inner-padding-h;
-				
 
 				& h3 {
 					color: color(customColor1);
@@ -128,15 +200,15 @@
 					background-color: color(techLabel);
 					border-radius: 8px;
 					align-items: center;
-					padding: 4px 12px;
+					padding: 8px 12px;
 					flex: none;
 					order: 2;
 					flex-grow: 0;
-					margin: 0px 8px;
+					margin: 0px 8px 8px 0px;
 					color: color(techText);
 				}	
 				& :first-child{
-					margin: 0px 8px 0px 0px;
+					margin: 0px 8px 8px 0px;
 				}
 			}
 
@@ -161,9 +233,16 @@
 					@include font-size(sm);
 				}
 			}
+			.split-item-image {
+				display: flex;
+				flex-flow: row;
+				justify-content: center;
+			}
 			.split-item-image img{				
-				min-width: 650px;
+				width: 600px;
+				min-width: 600px;				
 				// min-width: 200px;
+				margin-left: 0px;
 			}
 			
 		}
@@ -187,7 +266,7 @@
 				img,
 				svg,
 				video {
-					margin-left: auto;
+					margin-left: 0;
 				}
 			}
 		}
