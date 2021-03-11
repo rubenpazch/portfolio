@@ -63,10 +63,10 @@ const Hero = ({
             <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               I'm Ruben and I love coding
             </h2>
-            <div className="container-sm">
+            <div className="container-sm text-hero">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                La satisfaccion de saber que esforsaste mucho y lograste resolver un problema, ser un desarrollador web me ayuda a reinventarme cada día.
+                The satisfaction of knowing that you tried hard and managed to solve a problem, being a <b>web developer</b> helps me reinvent myself every day.
               </p>
             </div>
             <a href="www.google.com">LET'S CONNECT</a>
