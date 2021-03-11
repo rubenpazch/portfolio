@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
 import Image from '../elements/Image';
 import Button from '../elements/Button';
+import AccordionItem from './AccordionItem';
 
 const propTypes = {
   ...SectionProps.types,
@@ -15,6 +16,26 @@ const defaultProps = {
   ...SectionProps.defaults,
   split: false
 }
+
+const questionsAnswers = [
+  {
+    id: 1,
+    question: "Langguages",
+    answer:
+      "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
+  },
+  {
+    id: 2,
+    question: "Frameworks",
+    answer:
+      "No more than 2GB. All files in your account must fit your allotted storage space.",
+  },
+  {
+    id: 3,
+    question: "Skills",
+    answer: `Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.`,
+  }
+];
 
 const About = ({
   className,
@@ -27,6 +48,27 @@ const About = ({
   split,
   ...props
 }) => {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const renderedQuestionsAnswers = questionsAnswers.map((item, index) => {
+    const showDescription = index === activeIndex ? "show-description" : "";
+    const fontWeightBold = index === activeIndex ? "font-weight-bold" : "";
+    const ariaExpanded = index === activeIndex ? "true" : "false";
+    return (
+      <AccordionItem
+        showDescription={showDescription}
+        fontWeightBold={fontWeightBold}
+        ariaExpanded={ariaExpanded}
+        item={item}
+        key={item.id}
+        index={index}
+        onClick={() => {
+          setActiveIndex(index);
+        }}
+      />
+    );
+  });
 
   const outerClasses = classNames(
     'section center-content-mobile reveal-from-bottom',
@@ -113,7 +155,10 @@ const About = ({
               </Button>
             </div>
             <div className="tech-languages">
-              <h5>langguages</h5>
+              <div className="faq">
+                
+                <dl className="faq__list">{renderedQuestionsAnswers}</dl>
+              </div>
             </div>
           </div>
         </div>

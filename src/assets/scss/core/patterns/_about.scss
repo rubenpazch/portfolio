@@ -3,6 +3,13 @@
   border-top-right-radius: 36px;
 }
 
+@include media( '<=medium' ) {
+  .myself-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+}
 @include media( '>medium' ) {
   .about-footer {
     background-color: #fff;
