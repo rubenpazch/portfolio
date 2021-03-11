@@ -1,0 +1,48 @@
+.about-footer {
+  background-color: #fff;
+  border-top-right-radius: 36px;
+}
+
+@include media( '>medium' ) {
+  .about-footer {
+    background-color: #fff;
+    border-top-right-radius: 72px;
+  } 
+
+  .myself-container {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .content-myself {
+    width: 40%;
+    & a {
+      @include font-size(link-desktop);
+    }
+  }
+
+
+  .content-myself a {			
+    @include font-size(link-desktop);
+  }
+
+  .content-myself ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+  }
+
+  .content-myself ul li a img {
+    color: #505F79;
+    width: 20px;
+    height: 20px;
+  }
+
+  .content-myself p{
+    @include font-size(xs)
+  }
+
+  .tech-languages {
+    width: 60%;
+  }
+}
