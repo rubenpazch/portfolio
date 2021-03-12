@@ -158,9 +158,10 @@ const FeaturesSplit = ({
   return (
     <section
       {...props}
-      className={outerClasses}
+      className={outerClasses}      
+      name="portfolio0"
     >
-      <div className="container main-container">
+      <div className="container main-container" name="portfolio1" >
         <div className={innerClasses}>
           
           <div className={splitClasses}>
