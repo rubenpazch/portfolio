@@ -63,7 +63,7 @@ Tools used on this project
 
 ## Live Demo
 
-You can see the [live preview](http://rpazchuspe.haylli.net/)
+You can see the [live preview](http://rubenpazch.github.io/)
 
 ## SASS structure 
 
