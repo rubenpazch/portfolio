@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Logo from './partials/Logo';
 
 const propTypes = {
@@ -112,13 +112,13 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Portfolio</Link>
+                    <Link  className="test2" to="portfolio1"   duration={500} >Portfolio</Link>
                     </li>
                     <li>
-                      <Link to="#1" onClick={closeMenu}>About</Link>
+                    <Link  className="test2" to="aboutme1"   duration={500} >About me</Link>
                     </li>
                     <li>
-                      <Link to="#2" onClick={closeMenu}>Contact</Link>
+                    <Link  className="test2" to="contactme1"  duration={500} >Contact me</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
