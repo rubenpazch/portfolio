@@ -154,7 +154,7 @@ const About = ({
                   Get my resume
               </Button>
             </div>
-            <div className="tech-languages">
+            <div className="tech-languages m-0 p-0">
               <div className="faq">
                 
                 <dl className="faq__list">{renderedQuestionsAnswers}</dl>
