@@ -24,10 +24,10 @@ const questionsAnswers = [
     answer:
       "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
     icons:[
-      {image:"pl-ruby.png",name:"Ruby"},
-      {image:"pl-csharp.png",name:"C#"},
-      {image:"pl-java.png",name:"Java"},
-      {image:"pl-javascript.png",name:"Javascript"}
+      {id: 1, image:"pl-ruby.png",name:"Ruby"},
+      {id: 2, image:"pl-csharp.png",name:"C#"},
+      {id: 3, image:"pl-java.png",name:"Java"},
+      {id: 4, image:"pl-javascript.png",name:"Javascript"}
     ]
   },
   {
@@ -36,11 +36,11 @@ const questionsAnswers = [
     answer:
       "No more than 2GB. All files in your account must fit your allotted storage space.",
     icons:[
-       {image:"pl-rails.png",name:"ROR"},
-       {image:"pl-react.png",name:"React"},
-       {image:"pl-redux.png",name:"Redux"},
-       {image:"pl-netframe.png",name:"MVC 5"},
-       {image:"pl-netframe.png",name:"EF"},       
+       {id: 1, image:"pl-rails.png",name:"ROR"},
+       {id: 2, image:"pl-react.png",name:"React"},
+       {id: 3, image:"pl-redux.png",name:"Redux"},
+       {id: 4, image:"pl-netframe.png",name:"MVC 5"},
+       {id: 5, image:"pl-netframe.png",name:"EF"},       
      ]
   },
   {
@@ -48,10 +48,10 @@ const questionsAnswers = [
     question: "Skills",
     answer: `Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.`,
     icons:[
-      {image:"pl-soft-skills.png",name:"English"},
-      {image:"pl-soft-skills.png",name:"Reading"},
-      {image:"pl-soft-skills.png",name:"Writing"},
-      {image:"pl-soft-skills.png",name:"Speaking"},
+      {id: 1, image:"pl-soft-skills.png",name:"English"},
+      {id: 2, image:"pl-soft-skills.png",name:"Reading"},
+      {id: 3, image:"pl-soft-skills.png",name:"Writing"},
+      {id: 4, image:"pl-soft-skills.png",name:"Speaking"},
     ]
   }
 ];
@@ -110,8 +110,9 @@ const About = ({
     <section
       {...props}
       className={outerClasses}
+      name="aboutme0"
     >
-      <div className="fluid about-footer">
+      <div className="fluid about-footer" name="aboutme1">
         <div
           className={innerClasses}
         >
