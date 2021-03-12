@@ -38,14 +38,27 @@
       color: $soft-red;
     }
   }
+  
+  button:focus:not(:focus-visible) {
+    outline: 0;
+  }
 
   &__desc {
-    margin-left: -40px;
+    margin-left: 0px;
     padding-right: 17px;
     margin-top: 0;
     margin-bottom: 0;
     height: 0;
     overflow: hidden;
     transition: all 200ms ease-out;
+  }
+}
+
+
+@include media( '<=medium' ) {
+
+  .faq {
+    padding-left: 36px;
+    margin-left: 0px;
   }
 }
