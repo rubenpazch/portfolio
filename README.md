@@ -64,7 +64,7 @@ Tools used on this project
 
 ## mobile-friendly
 
-![screenshot](./mobile.png.png)
+![screenshot](./mobile.png)
 
 
 ## Live Demo
