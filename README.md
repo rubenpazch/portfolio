@@ -1,140 +1,120 @@
-# Free React landing page template
+# Building a portfolio project using HTML & CSS path
 
-![Open React template preview](https://user-images.githubusercontent.com/2683512/78789364-545e7100-79ad-11ea-9e3c-9528c99cda8e.png)
+## Project specifications
 
-**Open** is a **free React landing page template designed** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
+This project was built to show my personal information about my path like a software developer using different modern tech, on this project I will like to show some of my fancy projets, I used HTML, CSS, and SASS, stickler, flexbox.    
 
-Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
 
-## Live demo
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
+* [Whats is included on this project](#whats-is-included-on-this-project)
+* [Built With](#built-with)
+* [Screenshot](#screenshot)
+* [Live Demo](#live-demo)
+* [SASS structure](#SASS-structure)
+* [Video Presentation of the project](#video-presentation-of-the-project)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
+* [Contributing](#-Contributing)
+* [License](#license)
 
-## Open PRO
 
-Looking for more pages and components? Have a look at the **premium version** here 👉️ [https://cruip.com/demos/open-pro/](https://cruip.com/demos/open-pro/)
 
-*The premium template is built on-the-top of [Tailwind CSS](https://tailwindcss.com/), and React components have been re-built from scratch.* 
 
-## Table of contents
+## Whats is included on this project
 
-* [Usage](#usage)
-  * [Available Scripts](#available-scripts)
-    * [npm start](#npm-start)
-    * [npm test](#npm-test)
-    * [npm run build](#npm-run-build)
-    * [npm run eject](#npm-run-eject)
-  * [Learn More](#learn-more)
-    * [Code Splitting](#code-splitting)
-    * [Analyzing the Bundle Size](#analyzing-the-bundle-size)
-    * [Making a Progressive Web App](#making-a-progressive-web-app)
-    * [Advanced Configuration](#advanced-configuration)
-    * [Deployment](#deployment)
-    * [npm run build fails to minify](#npm-run-build-fails-to-minify)
-  * [Google Analytics Setup](#google-analytics-setup)
-* [Credits](#credits)
-* [Terms and License](#terms-and-license)
-* [About Us](#about-us)
-* [Stay in the loop](#stay-in-the-loop)
+This project includes the next parts:
 
-## Usage
++ The home page 
+  + Navigation bar
+  + Profile info
+  + About me
+  + Exprience and Education
+  + Project
+  + Articles
+  + Contact
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Available Scripts
 
-In the project directory, you can run:
+## Built With
 
-#### `npm install`
-To install the dependencies package.
+Concepts used on this project
 
-#### `npm start`
+- React
+- HTML
+- CSS
+- SASS 
+- Javascript
+- font-awesome
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Tools used on this project
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Stickler CI
+- Visual Studio Code
+- CSS Formatter
+- Stylelint
 
-#### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshot
 
-#### `npm run build`
+![screenshot](./img/screem_shot.png)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live Demo
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+You can see the [live preview](http://rpazchuspe.haylli.net/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## SASS structure 
 
-#### `npm run eject`
+For this project, I use SASS for managing CSS behavior and have the next structure.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* CSS
+* fonts
+* img
+* js
+* scss
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For making changes to this project you should run SASS with this command
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Go to the file where your project is located C:/www/project_root
+2. sass --watch scss:css
+3. Change files located on SCSS folder
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Video Presentation of the project
 
-### Learn More
+You can see the video presentation on the next link [here](https://www.youtube.com/watch?v=SWB-fzTpx5g&t=49s).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-#### Code Splitting
+👤 **Ruben Paz Chuspe**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Github: [@rubenpazch](https://github.com/rubenpazch)
+- Linkedin: [rubenpch](https://www.linkedin.com/in/rubenpch/)
+- Twitter: [chuspepaz](https://twitter.com/ChuspePaz)
 
-#### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This is an education project as a part of the Microverse so contributing is not accepted. 
 
-#### Making a Progressive Web App
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Feel free to check the [issues](https://github.com/rubenpazch/my_portfolio/issues).
 
-#### Advanced Configuration
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Give a ⭐️ if you like this project!
 
-#### Deployment
+## Acknowledgements
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
++ [Microverse](https://www.microverse.org/).
++ [Github](http://github.com/).
++ [Fontawesome](http://fontawesome.com/).
++ [The Odin Project](theodinproject.com/).
 
-#### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
 
-### Google Analytics Setup
+This project is [MIT](lic.url) licensed.
 
-This template uses the [React Google Analytics Module](https://github.com/react-ga/react-ga).
-
-In order to track visitors, you need to set an [environment variable](https://create-react-app.dev/docs/adding-custom-environment-variables/) called `REACT_APP_GA_CODE` storing your [GA Tracking ID](https://support.google.com/analytics/answer/7372977).
-
-## Credits
-
-- [Nucleo](https://nucleoapp.com/)
-- [Unsplash](https://unsplash.com/)
-
-## Terms and License
-
-- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2020 [Cruip](https://cruip.com/).
-- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
-- Attribution is not required, although it is really appreciated.
-
-## About Us
-
-We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
-
-## Stay in the loop
-
-If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/Cruip_com), or you can subscribe to our monthly [newsletter](https://cruip.com/#subscribe).
