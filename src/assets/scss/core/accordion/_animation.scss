@@ -1,19 +1,31 @@
 .faq__desc.show-description {
-  height: 3.5rem;
+  height: 6.5rem;
   margin-bottom: 15px;
   font-size: 16px;
   display: flex;
   flex-flow: row;
 
   .icon-langguages{
-    
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #F7F7F9;
+    padding: 16px;
+    margin-right: 12px;
+
     & img {
-      margin-right: 32px;
+      margin-right: 0px;
+      margin-bottom: 8px;
     }
     & span {
       font-size: 15px;
     }
   }
+}
+.faq__question {
+  max-width: 100%;
+  min-width: none;
+  width: 100%;
 }
 
 /* Arrows */
@@ -28,4 +40,44 @@
 /* open */
 .font-weight-bold::after {
   transform: rotate(720deg);
+}
+
+@include media( '<=medium' ) {
+  .faq__desc.show-description {
+    height: 16.5rem;
+    display: flex;
+    flex-flow: column;
+
+    .icon-langguages{
+      width: 100%;
+      height: 67px;      
+      border-radius: 8px;
+      background-color: #F7F7F9;
+      padding: 16px;
+      margin-right: 0;
+      margin-bottom: 12px;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+  
+      & img {
+        height: 48px;
+        margin-right: 0px;
+        margin-bottom: 8px;
+        margin-left: 0px;
+        margin-top: 8px;
+      }
+      & span {
+        font-size: 15px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .faq__desc{
+    margin-left: 0px;
+    margin-top: 8px;
+    
+  }  
+
 }
