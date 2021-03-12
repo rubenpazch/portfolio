@@ -8,7 +8,29 @@
     display: flex;
     flex-flow: column;
   }
+  .content-myself {
+    text-align: left;
+    & p {
+      @include font-size(link-desktop);
+    }
+    & a {
+      @include font-size(link-desktop);
+    }
+  }
 
+  .content-myself ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+  }
+  .content-myself ul li a img {
+    color: #505F79;
+    width: 20px;
+    height: 20px;
+  }
+  .tech-languages {
+    width: 100%;
+  }
 }
 @include media( '>medium' ) {
   .about-footer {
