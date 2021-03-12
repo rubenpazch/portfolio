@@ -171,7 +171,7 @@ const About = ({
                   </a>
                 </li>
               </ul>
-              <Button tag="a" color="light" wideMobile href="../src/assets/cv-rubenpazchuspe-web.pdf" className="mt-32" >
+              <Button tag="a" color="light" wideMobile href="https://drive.google.com/file/d/1pVhaRMgPcH71MDWbt8DX5ltDml-VVgl_/view?usp=sharing" className="mt-32" >
                   Get my resume
               </Button>
             </div>
