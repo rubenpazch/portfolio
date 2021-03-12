@@ -59,7 +59,7 @@ Tools used on this project
 
 ## Screenshot
 
-![screenshot](./img/screem_shot.png)
+![screenshot](./screem_shot.png)
 
 ## Live Demo
 
