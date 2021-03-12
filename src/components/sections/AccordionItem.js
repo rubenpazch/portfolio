@@ -21,25 +21,40 @@ const AccordionItem = ({
         {item.question}
       </button>
     </dt>
-    <dd>
+    <dd className="ml-0">
       <div 
       id={`faq${index + 1}_desc`}
       data-qa="faq__desc"
       className={`faq__desc ${showDescription}`}>
         <div className="icon-langguages">
           <Image
+          src={require('./../../assets/images/pl-ruby.png')}
+          alt="Project Appointment"
+          width={48}/>
+          <span>Javascript</span>
+        </div>
+        <div className="icon-langguages">
+          <Image
           src={require('./../../assets/images/pl-csharp.png')}
           alt="Project Appointment"
-          width={"40px"}/>
+          width={48}/>
           <span>Csharp</span>
         </div>
         <div className="icon-langguages">
           <Image
           src={require('./../../assets/images/pl-javascript.png')}
           alt="Project Appointment"
-          width={"40px"}/>
+          width={48}/>
           <span>Javascript</span>
         </div>
+        <div className="icon-langguages">
+          <Image
+          src={require('./../../assets/images/pl-java.png')}
+          alt="Project Appointment"
+          width={48}/>
+          <span>Javascript</span>
+        </div>
+        
       </div>
       
     </dd>
