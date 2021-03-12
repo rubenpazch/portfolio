@@ -32,7 +32,7 @@ const AccordionItem = ({
           ? <>
               {
                 items.map(x => (
-                  <div className="icon-langguages">
+                  <div className="icon-langguages" key={x.id}>
                     <Image
                     src={require(`./../../assets/images/${x.image}`)}
                     alt="Project Appointment"
