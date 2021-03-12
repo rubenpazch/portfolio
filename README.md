@@ -61,6 +61,12 @@ Tools used on this project
 
 ![screenshot](./screem_shot.png)
 
+
+## mobile-friendly
+
+![screenshot](./mobile.png.png)
+
+
 ## Live Demo
 
 You can see the [live preview](http://rubenpazch.github.io/)
