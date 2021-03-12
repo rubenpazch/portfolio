@@ -23,17 +23,36 @@ const questionsAnswers = [
     question: "Langguages",
     answer:
       "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
+    icons:[
+      {image:"pl-ruby.png",name:"Ruby"},
+      {image:"pl-csharp.png",name:"C#"},
+      {image:"pl-java.png",name:"Java"},
+      {image:"pl-javascript.png",name:"Javascript"}
+    ]
   },
   {
     id: 2,
     question: "Frameworks",
     answer:
       "No more than 2GB. All files in your account must fit your allotted storage space.",
+    icons:[
+       {image:"pl-rails.png",name:"ROR"},
+       {image:"pl-react.png",name:"React"},
+       {image:"pl-redux.png",name:"Redux"},
+       {image:"pl-netframe.png",name:"MVC 5"},
+       {image:"pl-netframe.png",name:"EF"},       
+     ]
   },
   {
     id: 3,
     question: "Skills",
     answer: `Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.`,
+    icons:[
+      {image:"pl-soft-skills.png",name:"English"},
+      {image:"pl-soft-skills.png",name:"Reading"},
+      {image:"pl-soft-skills.png",name:"Writing"},
+      {image:"pl-soft-skills.png",name:"Speaking"},
+    ]
   }
 ];
 
@@ -63,6 +82,7 @@ const About = ({
         item={item}
         key={item.id}
         index={index}
+        items={item.icons}
         onClick={() => {
           setActiveIndex(index);
         }}
