@@ -6,6 +6,7 @@ import FeaturesSplit from '../components/sections/FeaturesSplit';
 import About from '../components/sections/About';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
+import ContactForm from '../components/sections/ContactForm';
 
 const Home = () => {
 
