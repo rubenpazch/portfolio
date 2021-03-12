@@ -8,6 +8,7 @@ const AccordionItem = ({
   item,
   index,
   onClick,
+  items,
 }) => (
   <div className="faq__question" key={item.question}>
     <dt>
@@ -26,35 +27,23 @@ const AccordionItem = ({
       id={`faq${index + 1}_desc`}
       data-qa="faq__desc"
       className={`faq__desc ${showDescription}`}>
-        <div className="icon-langguages">
-          <Image
-          src={require('./../../assets/images/pl-ruby.png')}
-          alt="Project Appointment"
-          width={48}/>
-          <span>Javascript</span>
-        </div>
-        <div className="icon-langguages">
-          <Image
-          src={require('./../../assets/images/pl-csharp.png')}
-          alt="Project Appointment"
-          width={48}/>
-          <span>Csharp</span>
-        </div>
-        <div className="icon-langguages">
-          <Image
-          src={require('./../../assets/images/pl-javascript.png')}
-          alt="Project Appointment"
-          width={48}/>
-          <span>Javascript</span>
-        </div>
-        <div className="icon-langguages">
-          <Image
-          src={require('./../../assets/images/pl-java.png')}
-          alt="Project Appointment"
-          width={48}/>
-          <span>Javascript</span>
-        </div>
-        
+        {
+          items 
+          ? <>
+              {
+                items.map(x => (
+                  <div className="icon-langguages">
+                    <Image
+                    src={require(`./../../assets/images/${x.image}`)}
+                    alt="Project Appointment"
+                    width={48}/>
+                    <span>{x.name}</span>
+                  </div>
+                ))
+              }
+            </>
+          : <h1>no data</h1>
+        }
       </div>
       
     </dd>
