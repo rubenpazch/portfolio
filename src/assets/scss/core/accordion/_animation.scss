@@ -44,7 +44,7 @@
 
 @include media( '<=medium' ) {
   .faq__desc.show-description {
-    height: 16.5rem;
+    height: auto;
     display: flex;
     flex-flow: column;
 
