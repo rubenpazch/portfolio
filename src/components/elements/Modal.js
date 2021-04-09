@@ -134,10 +134,10 @@ const Modal = ({
                     </ul>
                   </div>
 
-                  <Button tag="a" color="light" wideMobile href={linkLivePreview} className="mt-32 mr-16" >
+                  <Button tag="a" color="light" wideMobile href={linkLivePreview} className="mt-32 mr-16" target="_blank" rel="noopener noreferrer">
                     See Live
                   </Button>
-                  <Button tag="a" color="light" wideMobile href={linkGithub} className="mt-32">
+                  <Button tag="a" color="light" wideMobile href={linkGithub} className="mt-32" target="_blank" rel="noopener noreferrer">
                     See Source
                   </Button>
                 </div>

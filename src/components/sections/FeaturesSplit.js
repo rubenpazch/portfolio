@@ -450,7 +450,7 @@ const FeaturesSplit = ({
                 handleClose={closeModal5}
                 children={"<h1>casa</h1>"}
                 videoTag="iframe"
-                titleContent="Group our Wishlist"
+                titleContent="Shooter Game"
                 companyContent="Microverse"
                 roleContent="Full Stack Developer"
                 yearContent="2020"
@@ -458,7 +458,7 @@ const FeaturesSplit = ({
                 featureImage="portfolio5.png"
                 techList={[{id: 1 ,name: "Javascript 6"}, {id: 2 ,name:"Webpack4"}, {id: 3 ,name:"Phaser 3"}]}
                 linkGithub={"https://github.com/rubenpazch/shooter-game"}
-                linkLivePreview={"https://morning-taiga-75196.herokuapp.com/"}
+                linkLivePreview={"https://phasershootergamejs.herokuapp.com/"}
               />  
             </div>
                   
